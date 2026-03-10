@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anim {
+          0% {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+      
+          25% {
+            top: 100;
+          }
+      
+          50% {
+            top: 100;
+            left: 100;
+          }
+
+          75% {
+            top: 0;
+            left: 100;
+          }
+
+
+          100% {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          }
+        }
+
+        rect{
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            animation: anim 2s forwards infinite ease-out 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <svg width="500" height="500" style="outline: 1px solid black;">
+ <rect
+   width="150px"
+   height="150px"
+   fill="blue"
+   x="20"
+   y="20"
+   
+ />
+</svg>
+</body>
+</html>
